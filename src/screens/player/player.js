@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Library() {
+export default function Player() {
   return (
     <div>
-      library
+      Player
     </div>
   )
 }
