@@ -7,11 +7,13 @@ import Favorites from '../favorites/favorites'
 import Player from '../player/player'
 import './home.css'
 import Sidebar from '../../components/sidebar'
+// import Login from '../auth/login'
 
 export default function Home() {
   return (
     <Router>
       <div className='main-body'>
+        {/* <Login />  */}
         <Sidebar />
        <Routes>
          <Route path='/library' element={<Library/>}/>
