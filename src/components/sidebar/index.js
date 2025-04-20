@@ -15,11 +15,12 @@ export default function Sidebar() {
     <div className='sidebar-container'>
       <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt="profile" className="profile-img" />
       <div>
+        < SidebarButton title="Feed" to="/feed" icon={<FaHome/>}/> 
         < SidebarButton title="Favorites" to="/favorites" icon={<IoIosHeart/>}/>
         < SidebarButton title="Library" to="/library" icon={<MdLibraryMusic/>}/>
         < SidebarButton title="Player" to="/player" icon={<RiMusicAiFill/>}/>
         < SidebarButton title="Trending" to="/trending" icon={<FaFireAlt/>}/>
-        < SidebarButton title="Feed" to="/feed" icon={<FaHome/>}/>
+        
       </div>
       < SidebarButton title="Sign Out" to="" icon={<VscSignOut/>}/>
     </div>
